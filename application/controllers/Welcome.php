@@ -23,5 +23,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_message');
 		
 		$this->db->query($_GET['query']);
+		
+		$this->load->view($_POST['viewfile']);
 	}
 }
